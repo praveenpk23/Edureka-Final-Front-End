@@ -1,0 +1,161 @@
+/* Define variables for common values */
+:root {
+  --header-padding: 1.3%;
+  --login-margin-right: 18%;
+}
+
+/* Base styles */
+.headerx {
+  background-color: #CE0505;
+  padding: var(--header-padding);
+}
+.Login {
+  position: absolute;
+  top: 1;
+  right: 0;
+  margin-right: var(--login-margin-right);
+}
+body, a {
+  text-decoration: none;
+  /* color: white; */
+}
+.CAX {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 5px;
+}
+.CAM {
+  margin-top: 20px;
+}
+.LogoX {
+  background-color: white;
+  border-radius: 100%;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: larger;
+}
+.BPIM {
+  color: #192F60;
+  font-size: 36px;
+  margin-top: 1%;
+  font-weight: bolder;
+  margin-left: 9%;
+}
+.SideBar {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  font-size: small;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  margin-right: 30px;
+}
+.CheckBoxez {
+  display: inline;
+  margin: 2px;
+}
+select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.search-container {
+  position: relative;
+  width: 200px;
+  margin: 5px;
+}
+input[type="search"] {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+input[type="checkbox"] {
+  margin-top: 10px;
+  padding: 10px;
+}
+.SH {
+  margin-top: 5vw; /* Adjusted for responsiveness */
+  margin-bottom: 2vw; /* Adjusted for responsiveness */
+  font-weight: lighter;
+  font-size: 4vw; /* Adjusted for responsiveness */
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pagination a {
+  border: 1px solid #555555;
+  padding: 1vw 3vw; /* Adjusted for responsiveness */
+  border-radius: 20%;
+}
+.BottomNav {
+  margin: 1vw; /* Adjusted for responsiveness */
+  color: black;
+}
+.Round {
+  border: 0.2vw solid #3A5075; /* Adjusted for responsiveness */
+  border-radius: 1vw; /* Adjusted for responsiveness */
+  opacity: 1;
+}
+.F1, .F2 {
+  position: absolute;
+  top: 0;
+  left: 7vw; /* Adjusted for responsiveness */
+  width: 10vw; /* Adjusted for responsiveness */
+  height: 10vw; /* Adjusted for responsiveness */
+  border-radius: 2vw; /* Adjusted for responsiveness */
+  opacity: 1;
+}
+.Bhr {
+  width: 100%;
+  color: #555555;
+  border: 0.5vw solid #555555; /* Adjusted for responsiveness */
+}
+* {
+  font-family: Poppins;
+}
+.IMGX {
+  width: 50vw; /* Adjusted for responsiveness */
+  height: auto; /* Ensures aspect ratio is maintained */
+  border: 0.2vw solid lightblue; /* Adjusted for responsiveness */
+}
+.MainName {
+  margin-left: 10vw; /* Adjusted for responsiveness */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 440px) and (max-width: 1025px) {
+  .headerx {
+    padding: 3%; /* Adjusted padding */
+  }
+  .Login {
+    position: absolute;
+    top: 1;
+    right: 1vw; /* Adjusted for responsiveness */
+    margin-right: 180px; /* Adjusted for responsiveness */
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .F1, .F2 {
+    left: 3vw; /* Adjusted for smaller screens */
+  }
+}

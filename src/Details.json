@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "The Spice Kitchen",
+        "location": "123 Main Street, Bengaluru`",
+        "image": "/Images/spice_kitchen.png"
+    },
+    {
+        "id": 2,
+        "name": "Café Nirvana",
+        "location": "456 Sarjapur Road, Bengaluru",
+        "image": "/Images/cafe_nirvana.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Italiano Trattoria",
+        "location": "789 MG Road, Bengaluru",
+        "image": "/Images/italiano_trattoria.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Thai Delight",
+        "location": "101 Koramangala, Bengaluru",
+        "image": "/Images/thai_delight.png"
+    }
+]

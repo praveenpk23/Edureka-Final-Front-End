@@ -1,0 +1,47 @@
+/* .Xcart-container styles */
+.Xcart-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three items per row */
+  gap: 2%;
+  justify-items: center;
+  width: 80%;
+}
+
+/* .Xfood-item styles */
+.Xfood-item {
+  display: flex;
+  border: 1px solid black;
+  background-color: #FFFFFF;
+  box-sizing: border-box; /* Include padding in width calculation */
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid rgb(255, 255, 255);
+  /* width: calc(100% - 2%); Adjust width to fit in container with gap */
+  margin: 10%;
+  width: 100%;
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+/* .Xfood-details styles */
+.Xfood-details {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+/* .Xfood-item img styles */
+.Xfood-item img {
+  width: 100px;
+  height: 130px;
+  margin-right: 10px; /* Add margin to separate image from text */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Adjust grid layout and container width for smaller screens */
+  .Xcart-container {
+    grid-template-columns: repeat(1, 1fr); /* One item per row on small screens */
+    width: 50%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,163 @@
+.Bg{
+    background-image: url('./Images/bg.png');
+    height: 400px;
+    width: 100% ;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    opacity: 1;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%,  100%) 0% 0% no-repeat padding-box;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Login{
+    position: absolute;top:1;right:0;margin-right:20%;
+}
+
+
+
+
+
+.bg-img{
+    /* background-image: url(/Images/shutterstock_348320018@2x.png); */
+    height: 350px;
+    width: 100% ;
+    mix-blend-mode: multiply;
+    background-size: cover;
+    opacity: 1;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%,  100%) 0% 0% no-repeat padding-box;
+}
+
+.Logo{
+    background-color: white;
+    border-radius: 100%;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 60px;
+    color: #EB2929;
+    padding: 12px;
+
+    
+}
+
+.Pa{
+    text-align: center;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+font-size: 36px;
+font-weight:500;
+}
+
+.location{
+    padding: 10px; border: none; width: 50%; margin-left: 80%;
+    
+}
+.InL{
+    padding: 15px; border: none; margin-right: 20px; width: 15%; 
+    
+}
+.InR{
+    padding: 15px; border: none; width: 30%;
+    
+}
+
+.BT{
+    color: red;
+    display: inline;
+}
+
+.Search{
+    padding: 10px; padding-left: 50px; border: none; width: 57%;
+    margin-right: 40%;
+}
+.Location{
+    padding: 10px; border: none; width: 40%;
+    margin-left: 62%;
+}
+.CA{
+    margin-top: 1.5%;
+}
+
+@media (max-width:800px) {
+    .QS{
+        margin-left: 0px;
+
+    }
+    .Bg{
+        height: 500px;
+    }
+    .InR{
+        width:90%;
+        margin-top: 10px;
+    }
+    .InL{
+        width: 90%;
+        margin-right: 0px;
+
+    }
+    .CA{
+        margin-top: 20px;
+    }
+        .BT{
+            display: block;
+        }  
+        .Search{
+            padding: 10px; padding-left: 60px; border: none; width: 100%; margin-right: 0%;
+        }  
+        .Location{
+            padding: 10px; border: none; width: 100%;
+            margin-left: 0%;
+            margin-bottom: 12px;
+        }
+        .bg-img{
+            height: 450px;
+        }
+        .Login {
+            position: absolute;
+            top: 1; /* Adjust the top value based on your design */
+            right: 10px;
+            margin-right: 40%;
+        }
+        .lens{
+            position: absolute; top: 50%; transform: translateY(-50%); left: 1px; right: 10px;
+        }
+        .ndRow{
+            margin-top: 10%;
+        }
+        .mtsm{
+            margin-top: 0px;
+        }
+}
+
+
+
+.lens{
+    position: absolute; top: 50%; transform: translateY(-50%); left: 25px;
+}
+
+.ndRow{
+    margin-top: 0%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.Boz{
+   height: 10%;
+    
+}
+
+.VXX{
+    width: 20%;
+}
+.QS{
+    margin-top: 100px;
+    margin-left: 160px;
+}
