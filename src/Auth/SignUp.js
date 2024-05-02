@@ -10,6 +10,7 @@ const Login = () => {
 
   const [name, setName] = useState('');
   const [pincode, setPincode] = useState('');
+  const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [mobile, setMobile] = useState('');
@@ -44,6 +45,9 @@ const Login = () => {
       setMobile(value);
     } else if (name === 'otp') {
       setOtp(value);
+    }
+    else if(name === 'Address'){
+      setAddress(value)
     }
   };
 
@@ -97,7 +101,8 @@ const Login = () => {
             pincode: pincode,
             email: email,
             password: password,
-            mobile: phoneNumber
+            mobile: phoneNumber,
+            Address:address,
           });
           navigate('/');
         } catch (error) {
@@ -211,11 +216,21 @@ const Login = () => {
                 margin="normal"
               />
               <TextField
-                type="text"
+                type="number"
                 name="pincode"
                 label="Pincode"
                 required
                 value={pincode}
+                onChange={handleChange}
+                fullWidth
+                margin="normal"
+              />
+                    <TextField
+                type="text"
+                name="Address"
+                label="Address"
+                required
+                value={address}
                 onChange={handleChange}
                 fullWidth
                 margin="normal"

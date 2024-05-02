@@ -10,7 +10,7 @@ import Footer from './Footer';
 // import './App.css'; // Import the CSS file for styling
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import NotFound from './NotFound';
 function App() {
   return (
 <> 
@@ -23,6 +23,8 @@ function App() {
             <Route path='/SignUp' element={<SignUp />} />
             <Route path='/Cart/*' element={<Navbar />} />
             <Route path='/FoodsFront/:id' element={<FoodDetailPage />} />
+            {/* Define a catch-all route for 404 */}
+            <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
       
@@ -34,3 +36,6 @@ function App() {
 }
 
 export default App;
+
+
+
