@@ -90,9 +90,9 @@ function App() {
                 <Route path="/FoodsFront/:id" element={<FoodDetailPage />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
-              <Footer />
             </div>
           )}
+                        <Footer />
         </div>
       </Router>
     </>
