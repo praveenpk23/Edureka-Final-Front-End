@@ -44,3 +44,13 @@
     text-align: center; /* Center-align footer content */
   }
   
+
+  @media (max-width: 768px) {
+    .App .content {
+      padding-bottom: 50px; /* Adjust padding to maintain content visibility */
+    }
+    
+    .App > footer {
+      display: none;
+    }
+  }

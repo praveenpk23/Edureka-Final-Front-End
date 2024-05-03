@@ -257,13 +257,14 @@ function YourComponentWithoutOrder() {
           <>
             <div className='CW'>
               {cartData.map(item => (
-                <div key={item.id} className="food-item">
+                <div key={item.id} className="food-itemX">
   
                   <Link to={`/FoodsFront/${item.FoodId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <img className="food-image" src={item.image} alt={item.name} />
                   </Link>
                   <div>
-                    <h2 className="food-name">{item.name}</h2>
+                    <br/><br />
+                    <h2 className="food-name" style={{color:"#"}}>{item.name}</h2>
                     <p className="food-description">{item.description}</p>
                   </div>
                   <input
@@ -271,6 +272,7 @@ function YourComponentWithoutOrder() {
                     checked={selectedItems.some(selectedItem => selectedItem === item.FoodId)}
                     onChange={() => handleSelectItem(item.FoodId)}
                     className="food-checkbox"
+                    style={{margin:"30px"}}
                   />
                   <Button variant='text' onClick={() => handleRemoveItem(item.id)}>remove</Button>
   

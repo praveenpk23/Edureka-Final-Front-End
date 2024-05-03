@@ -211,14 +211,14 @@ opacity: 1;
 
 
 
-  .IMGX{
+  /* .IMGX{
     width: 900px;
     height: 300px;
     border: 2px solid lightblue;
-  }
+  } */
 
-  .MainName{margin-left: 230px;}
-
+  /* .MainName{margin-left: 230px;}
+ */
 
 
   .badge {
@@ -239,12 +239,4 @@ opacity: 1;
 /* Other styles */
 
 /* Hide footer on small screens */
-@media (max-width: 768px) {
-  .App .content {
-    padding-bottom: 50px; /* Adjust padding to maintain content visibility */
-  }
-  
-  .App > footer {
-    display: none;
-  }
-}
+

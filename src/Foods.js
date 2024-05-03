@@ -52,19 +52,19 @@ function FoodsPage() {
 
     return (
         <center>
-                <div className="foods-container">
+                <div className="foods-containerX">
                     {foods.map(food => (
                         <Link key={food.id} to={`/FoodsFront/${food.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                         <center>
-                         <div className="food-item">
-                                <img className="food-image" src={food.image} alt={food.name} />
-                                <div className="food-details">
+                         {/* <center> */}
+                         <div className="food-itemX">
+                                <img className="food-imageX" src={food.image} alt={food.name} />
+                                <div className="food-detailsX">
                                     <h2 style={{color:"#192F60"}} className="food-name">{food.name}</h2>
                                     <br />
                                     <p style={{justifyContent:"left",color:"black"}} className="food-idX">{food.description}</p>
                                 </div>
                             </div>
-                         </center>
+                         {/* </center> */}
                         </Link>
                     ))}
                 </div>
