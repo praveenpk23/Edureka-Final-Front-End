@@ -221,15 +221,109 @@ export default function Account() {
     return <p>Error: {error}</p>;
   }
 
+  // return (
+  //   <div style={{ textAlign: 'center', padding: '20px' }}>
+  //     {/* <h1 style={{ marginBottom: '20px' }}>Account</h1> */}
+  //     {userData && (
+  //       <div style={{ marginBottom: '20px' }}>
+  //         <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Name: {userData.name}</p>
+  //         <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Address: {userData.address}</p>
+  //         <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Pincode: {userData.pincode}</p>
+  //         <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Mobile: {userData.mobile}</p>
+  //         <Button variant="contained" color="primary" style={{ marginRight: '10px' }} onClick={handleUpdateDialogOpen}>Update</Button>
+  //         <Button variant="contained" color="primary" onClick={handleLogout}>Logout</Button>
+  //       </div>
+  //     )}
+  //     <Dialog
+  //       open={openUpdateDialog}
+  //       onClose={handleUpdateDialogClose}
+  //       aria-labelledby="form-dialog-title"
+  //     >
+  //       <DialogTitle id="form-dialog-title">Update Information</DialogTitle>
+  //       <DialogContent>
+  //         <TextField
+  //           autoFocus
+  //           margin="dense"
+  //           id="name"
+  //           label="Name"
+  //           type="text"
+  //           fullWidth
+  //           value={name}
+  //           onChange={(e) => setName(e.target.value)}
+  //         />
+  //         <TextField
+  //           margin="dense"
+  //           id="address"
+  //           label="Address"
+  //           type="text"
+  //           fullWidth
+  //           value={address}
+  //           onChange={(e) => setAddress(e.target.value)}
+  //         />
+  //         <TextField
+  //           margin="dense"
+  //           id="pincode"
+  //           label="Pincode"
+  //           type="text"
+  //           fullWidth
+  //           value={pincode}
+  //           onChange={(e) => setPincode(e.target.value)}
+  //         />
+  //         {/* <TextField
+  //           margin="dense"
+  //           id="mobile"
+  //           label="Mobile"
+  //           type="text"
+  //           fullWidth
+  //           value={mobile}
+  //           onChange={(e) => setMobile(e.target.value)}
+  //         /> */}
+  //       </DialogContent>
+  //       <DialogActions>
+  //         <Button onClick={handleUpdateDialogClose} color="primary">
+  //           Cancel
+  //         </Button>
+  //         <Button onClick={handleUpdate} color="primary">
+  //           Update
+  //         </Button>
+  //       </DialogActions>
+  //     </Dialog>
+  //     <Dialog
+  //       open={openLogoutDialog}
+  //       onClose={handleCloseLogoutDialog}
+  //       aria-labelledby="alert-dialog-title"
+  //       aria-describedby="alert-dialog-description"
+  //     >
+  //       <DialogTitle id="alert-dialog-title">{"Logout"}</DialogTitle>
+  //       <DialogContent>
+  //         <DialogContentText id="alert-dialog-description">
+  //           Are you sure you want to logout?
+  //         </DialogContentText>
+  //       </DialogContent>
+  //       <DialogActions>
+  //         <Button onClick={handleCloseLogoutDialog} color="primary">
+  //           Cancel
+  //         </Button>
+  //         <Button onClick={handleConfirmLogout} color="primary" autoFocus>
+  //           Confirm
+  //         </Button>
+  //       </DialogActions>
+  //     </Dialog>
+  //   </div>
+  // );
+
+
   return (
     <div style={{ textAlign: 'center', padding: '20px' }}>
-      <h1 style={{ marginBottom: '20px' }}>Account</h1>
       {userData && (
-        <div style={{ marginBottom: '20px' }}>
-          <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Name: {userData.name}</p>
-          <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Address: {userData.address}</p>
-          <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Pincode: {userData.pincode}</p>
-          <p style={{ fontSize: '1.2rem', marginBottom: '10px' }}>Mobile: {userData.mobile}</p>
+        <div style={{ maxWidth: '400px', margin: '0 auto', marginBottom: '20px' }}>
+          <h1 style={{ marginBottom: '20px', fontSize: '1.5rem', fontWeight: 'bold' }}>Account</h1>
+          <div style={{ marginBottom: '20px', fontSize: '1.2rem', lineHeight: '1.5' }}>
+            <p><strong>Name:</strong> {userData.name}</p>
+            <p><strong>Address:</strong> {userData.address}</p>
+            <p><strong>Pincode:</strong> {userData.pincode}</p>
+            <p><strong>Mobile:</strong> {userData.mobile}</p>
+          </div>
           <Button variant="contained" color="primary" style={{ marginRight: '10px' }} onClick={handleUpdateDialogOpen}>Update</Button>
           <Button variant="contained" color="primary" onClick={handleLogout}>Logout</Button>
         </div>
@@ -239,7 +333,7 @@ export default function Account() {
         onClose={handleUpdateDialogClose}
         aria-labelledby="form-dialog-title"
       >
-        <DialogTitle id="form-dialog-title">Update Information</DialogTitle>
+        <DialogTitle id="form-dialog-title" style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold' }}>Update Information</DialogTitle>
         <DialogContent>
           <TextField
             autoFocus
@@ -269,21 +363,12 @@ export default function Account() {
             value={pincode}
             onChange={(e) => setPincode(e.target.value)}
           />
-          {/* <TextField
-            margin="dense"
-            id="mobile"
-            label="Mobile"
-            type="text"
-            fullWidth
-            value={mobile}
-            onChange={(e) => setMobile(e.target.value)}
-          /> */}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleUpdateDialogClose} color="primary">
+          <Button onClick={handleUpdateDialogClose} color="primary" style={{ fontSize: '1rem', fontWeight: 'bold' }}>
             Cancel
           </Button>
-          <Button onClick={handleUpdate} color="primary">
+          <Button onClick={handleUpdate} color="primary" style={{ fontSize: '1rem', fontWeight: 'bold' }}>
             Update
           </Button>
         </DialogActions>
@@ -294,21 +379,25 @@ export default function Account() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Logout"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title" style={{ textAlign: 'center', fontSize: '1.5rem', fontWeight: 'bold' }}>Logout</DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
+          <DialogContentText id="alert-dialog-description" style={{ fontSize: '1.2rem', lineHeight: '1.5' }}>
             Are you sure you want to logout?
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleCloseLogoutDialog} color="primary">
+          <Button onClick={handleCloseLogoutDialog} color="primary" style={{ fontSize: '1rem', fontWeight: 'bold' }}>
             Cancel
           </Button>
-          <Button onClick={handleConfirmLogout} color="primary" autoFocus>
+          <Button onClick={handleConfirmLogout} color="primary" autoFocus style={{ fontSize: '1rem', fontWeight: 'bold' }}>
             Confirm
           </Button>
         </DialogActions>
       </Dialog>
     </div>
   );
+  
+  
+
+
 }
